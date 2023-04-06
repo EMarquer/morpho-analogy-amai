@@ -1,0 +1,12 @@
+[submodule "sigmorphon2016"]
+	path = sigmorphon2016
+	url = https://github.com/ryancotterell/sigmorphon2016
+[submodule "sigmorphon2019"]
+	path = sigmorphon2019
+	url = git@github.com:sigmorphon/2019.git
+[submodule "siganalogies"]
+	path = siganalogies
+	url = git@github.com:EMarquer/siganalogies
+[submodule "genmorpho"]
+	path = genmorpho
+	url = https://github.com/EMarquer/genmorpho

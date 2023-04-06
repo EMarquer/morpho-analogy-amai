@@ -1,0 +1,9 @@
+precomputed
+
+*.egg-info
+__pycache__
+dist
+__builder__.py
+sig_2016_merged*
+sig_2016_task2.py
+*.zip

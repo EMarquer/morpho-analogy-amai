@@ -326,8 +326,8 @@ def main(args):
     # load best model and save it at the right place
     state_dict = torch.load(checkpoint_callback.best_model_path, map_location="cpu")["state_dict"]
     state_dict_emb = {k[len("emb."):]: v for k, v in state_dict.items() if k.startswith("emb.")}
-    state_dict_clf = {k[len("clf."):]: v for k, v in state_dict.items() if k.startswith("clf.")}
-    save_final_model(model_path, performance_dict=nn.test_performance, other_info=nn.extra_info, cnn_emb_state_dict=state_dict_emb, annc_state_dict=state_dict_clf)
+    state_dict_reg = {k[len("reg."):]: v for k, v in state_dict.items() if k.startswith("reg.")}
+    save_final_model(model_path, performance_dict=nn.test_performance, other_info=nn.extra_info, cnn_emb_state_dict=state_dict_emb, annr_state_dict=state_dict_reg)
 
 def add_argparse_args(parser=None, return_all=False):
     if parser is None:
